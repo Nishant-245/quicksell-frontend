@@ -1,0 +1,51 @@
+.task-column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.task-column .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.task-column .header-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-column .header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.task-column .header-title {
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.task-column .header-title .item-count {
+  margin-left: 8px;
+  color: #6b6f76;
+}
+
+.task-column .cards-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+@media screen and (max-width: 700px) {
+  .task-column {
+    width: calc(100vw - 4rem);
+  }
+  .task-column .cards-section {
+    width: 100%;
+    overflow-y: auto;
+    flex-direction: row;
+  }
+}
